@@ -38,12 +38,12 @@ function viewCart() {
     for(var i=0; i < cart.length; i++){
       if(cart.length === i - 1){
         var bar = cart[i]
-        var str1 = `${bar.itemName} at $${bar.itemPrice}, `
+        var str1 = `${bar.itemName} at $${bar.itemPrice}.`
         strStart = strStart + str1
       }
       else{
         var bar = cart[i]
-        var str1 = `${bar.itemName} at $${bar.itemPrice}.`
+        var str1 = `${bar.itemName} at $${bar.itemPrice}, `
         strStart = strStart + str1
       }
     }
