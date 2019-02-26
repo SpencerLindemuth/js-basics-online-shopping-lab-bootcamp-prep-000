@@ -41,7 +41,13 @@ function viewCart() {
         var str1 = `${itemName} at $${itemPrice}, `
         strStart = strStart + str1
       }
+      else{
+        var bar = cart[i]
+        var str1 = `${itemName} at $${itemPrice}.`
+        strStart = strStart + str1
+      }
     }
+    return strStart
   }
 }
 
