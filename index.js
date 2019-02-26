@@ -31,7 +31,7 @@ function viewCart() {
     var bar = cart[0]
     var foo = cart[1]
     var str = `In your cart, you have ${bar.itemname} at $${bar.itemPrice}, and ${foo.itemName} batter at $${foo.itemPrice}.`
-    retrun str
+    return str
   }
 }
 
