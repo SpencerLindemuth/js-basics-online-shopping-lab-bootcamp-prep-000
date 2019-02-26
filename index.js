@@ -33,6 +33,16 @@ function viewCart() {
     var str = `In your cart, you have ${bar.itemName} at $${bar.itemPrice}, and ${foo.itemName} at $${foo.itemPrice}.`
     return str
   }
+  else{
+    var strStart = `In your cart, you have `
+    for(var i; i < cart.length; i++){
+      if(!cart.length){
+        var bar = cart[i]
+        var str1 = `${itemName} at $${itemPrice}, `
+        strStart = strStart + str1
+      }
+    }
+  }
 }
 
 function total() {
