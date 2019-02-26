@@ -76,7 +76,7 @@ function removeFromCart(item) {
     return newCart
   }
   else{
-    return cart
+    return `That item is not in your cart.`
   }
 }
 
