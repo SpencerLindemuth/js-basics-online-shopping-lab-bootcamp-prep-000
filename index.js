@@ -36,7 +36,7 @@ function viewCart() {
   else{
     var strStart = `In your cart, you have `
     for(var i=0; i < cart.length; i++){
-      if(!cart.length){
+      if(cart.length === i){
         var bar = cart[i]
         var str1 = `${bar.itemName} at $${bar.itemPrice}, `
         strStart = strStart + str1
