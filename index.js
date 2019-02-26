@@ -64,6 +64,20 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var keeper = 0
+  for(var i = 0; i < cart.length; i++){
+    var bar = cart[i]
+    if(bar.itemName === item){
+      var newCart = cart.splice(i, 1)
+      keeper + 1
+    }
+  }
+  if(keeper === 0){
+    return newCart
+  }
+  else{
+    return cart
+  }
 }
 
 function placeOrder(cardNumber) {
