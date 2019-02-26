@@ -72,7 +72,7 @@ function removeFromCart(item) {
       keeper + 1
     }
   }
-  if(keeper === 0){
+  if(keeper !== 0){
     return newCart
   }
   else{
